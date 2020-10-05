@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang= "en">
+    
+
+<head>
+        <meta charset="UTF-8">
+        <meta name= "viweport" content="width=device-width, initial-scale=1.0">
+<style>
+
+
+       
+
+             body{
+                  background-image:url('https://i.fbcd.co/products/original/5b24c750bef0491592621cf6e6a2942cc36fbd4df09f84080aaf603a5226aba7.jpg');
+                  background-size: cover;
+                  text-align: center;
+              }
+
+
+              .container{
+                  position: absolute;
+                  display: flex;
+                  flex-wrap: wrap;
+                  width: 1300px;
+                  height: 700px;
+                  margin: auto;
+                  margin-top: 50px;
+                  margin-left: 40px;
+              }
+
+
+              .item{
+                  width: 200px;
+                  height: 200px;
+                  margin-top: 50px;
+                  margin-left: 50px;
+              }
+
+              .item img{
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+              }
+          
+
+              .item :hover{
+                transform: rotate(2);
+              }
+
+
+        </style>
+        <script src= "libs/howler.js"></script>
+        <title>Carebear</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item"> 
+        <img src = "img/0.jpeg" onclick= "playSound(sound0)"> </div>
+
+        <div class="item"> 
+        <img src = "img/1.jpg" onclick= "playSound(sound1)"> </div>
+
+        <div class="item"> 
+        <img src = "img/2.jpg" onclick= "playSound(sound2)"> </div>
+
+        <div class="item"> 
+        <img src = "img/3.jpg" onclick= "playSound(sound3)"> </div>
+
+        <div class="item"> 
+        <img src = "img/4.jpg" onclick= "playSound(sound4)"> </div>
+
+        <div class="item"> 
+        <img src = "img/5.jpg" onclick= "playSound(sound5)"> </div>
+
+        <div class="item"> 
+        <img src = "img/6.png" onclick= "playSound(sound6)"> </div>
+        
+        <div class="item"> 
+        <img src = "img/7.jpg" onclick= "playSound(sound7)"> </div>
+
+        <div class="item"> 
+        <img src = "img/8.jpeg" onclick= "playSound(sound8)"> </div>
+
+        <div class="item"> 
+        <img src = "img/9.jpg" onclick= "playSound(sound9)"> </div>
+    
+
+    </div>
+
+
+    <script>
+
+        const sound0 = new Howl({src: 'sounds/0.mp3'});
+        const sound1 = new Howl({src: 'sounds/1.mp3'});
+        const sound2 = new Howl({src: 'sounds/2.mp3'});
+        const sound3 = new Howl({src: 'sounds/3.mp3'});
+        const sound4 = new Howl({src: 'sounds/4.mp3'});
+        const sound5 = new Howl({src: 'sounds/5.mp3'});
+        const sound6 = new Howl({src: 'sounds/6.mp3'});
+        const sound7 = new Howl({src: 'sounds/7.mp3'});
+        const sound8 = new Howl({src: 'sounds/8.mp3'});
+        const sound9 = new Howl({src: 'sounds/9.mp3'});
+
+
+    console.log(sound0);
+    const playSound = (sound) => {
+         if(!sound.playing()){ sound.play(); } 
+         
+         else { sound.stop(); } }
+
+         
+
+
+    </script>
+</body>
+
+</html>
